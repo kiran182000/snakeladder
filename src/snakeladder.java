@@ -30,6 +30,9 @@ public class snakeladder {
                 if (playerposition < 0) {
                     playerposition = 0;
                 }
+                if(playerposition > 100){
+                    playerposition -= RollDice;
+                }
                 System.out.println();
             }
         }
