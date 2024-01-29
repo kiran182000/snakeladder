@@ -1,5 +1,6 @@
 public class snakeladder {
     public static void main(String[] args){
-        System.out.println("Start playing snake and ladder");
+        int RollDice=(int)(Math.random()*6+1);
+        System.out.println("Dice number after rolling: "+RollDice);
     }
 }
