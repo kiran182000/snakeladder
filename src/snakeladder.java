@@ -3,6 +3,7 @@ public class snakeladder {
     public static void main(String[] args) {
         System.out.println("Player starts at postion 0");
         int playerposition = 0;
+        int moves_count=0;
         boolean presentturn = true;
         while (playerposition != 100) {
             if (presentturn == true) {
@@ -27,6 +28,8 @@ public class snakeladder {
                         playerposition = playerposition - RollDice;
                         break;
                 }
+                moves_count+=1;
+                System.out.println("Position after each time dice rolled; "+ playerposition);
                 if (playerposition < 0) {
                     playerposition = 0;
                 }
@@ -36,6 +39,7 @@ public class snakeladder {
                 System.out.println();
             }
         }
+        System.out.println("Number of times dice rolled to win: " +moves_count);
         System.out.println("PLAYER WINS");
     }
 }
